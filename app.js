@@ -54,4 +54,5 @@ const choose = document.querySelector(".choosema");
 choose.onclick=()=>{
     let aaa= prompt("Nhập mã");
     main.setAttribute("style",`background:${aaa}`);
+//có thể dùng mã gradient luôn
 }
