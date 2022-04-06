@@ -53,5 +53,5 @@ changecolor.onclick =() =>{
 const choose = document.querySelector(".choosema");
 choose.onclick=()=>{
     let aaa= prompt("Nhập mã");
-    main.setAttribute("style",`${aaa}`);
+    main.setAttribute("style",`background:${aaa}`);
 }
