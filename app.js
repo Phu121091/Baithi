@@ -40,11 +40,15 @@ const random = () =>{
    return Math.floor(Math.random()*256);
 }
 changecolor.onclick =() =>{
-    let col = `background-color:rgb(${random()}, ${random()}, ${random()})`;
-    // let c = `background:linear-gradient(rgb(${random()}, ${random()}, ${random()}), rgb(${random()}, ${random()}, ${random()}), rgb(${random()}, ${random()}, ${random()}))`
+    const so1 =random();
+    const so2 =random();
+    const so3 =random();
+    let col = `background-color:rgb(${so1}, ${so2}, ${so3})`;
+    
     main.setAttribute("style",`${col}`);
-    macolor.innerHTML=`${col.split("background-color:")[1]}`;
-//    alert(random().toString(16));
+    
+    macolor.innerHTML=`#${so1.toString(16)}${so2.toString(16)}${so3.toString(16)}`
+
 }
 const choose = document.querySelector(".choosema");
 choose.onclick=()=>{
